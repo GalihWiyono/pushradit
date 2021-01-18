@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history_cart">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="592dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#29b6f6">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="History"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <!--        <TextView-->
+        <!--            android:layout_marginRight="12dp"-->
+        <!--            android:layout_gravity="end"-->
+        <!--            android:id="@id/textView"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Select Date"-->
+        <!--            android:textColor="@color/white"/>-->
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:ems="8" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/editText"
+        android:src="@drawable/ic_baseline_calendar_today_24"
+        android:id="@+id/imageView"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:id="@+id/lv_history"/>
+
+</RelativeLayout>

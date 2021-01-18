@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.project.Menu"
+        android:label="Menu" />
+    <fragment
+        android:id="@+id/halaman_utama"
+        android:name="com.example.project.halaman_utama"
+        android:label="fragment_halaman_utama"
+        tools:layout="@layout/fragment_halaman_utama" />
+    <fragment
+        android:id="@+id/total_cart"
+        android:name="com.example.project.total_cart"
+        android:label="fragment_total_cart"
+        tools:layout="@layout/fragment_total_cart" />
+    <fragment
+        android:id="@+id/history_cart"
+        android:name="com.example.project.history_cart"
+        android:label="fragment_history_cart"
+        tools:layout="@layout/fragment_history_cart" />
+</navigation>
